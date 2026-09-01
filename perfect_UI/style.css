@@ -1,0 +1,564 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+ position: relative;
+ 
+
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  background-color: black;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.left .logo1 {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+}
+
+.left .home {
+  font-size: 1.4rem;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 0.6rem;
+  transition: 0.2s;
+}
+
+.left .home:hover {
+  transform: scale(1.05);
+}
+
+.left .searchbar {
+  display: flex;
+  background-color: #1f1f1f;
+  border-radius: 19px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .logo {
+  margin-right: 0.4rem;
+  color: rgb(169, 169, 169);
+}
+
+.left .input_type {
+  background-color: #1f1f1f;
+  border: none;
+  margin-right: 8rem;
+  color: aliceblue;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: lightgray; /* placeholder color */
+  opacity: 1; /* ensures full visibility */
+}
+
+.left .browse {
+  font-size: 1rem;
+  border-left: 1px solid rgb(169, 169, 169);
+  padding-left: 10px;
+  transition: 0.2s;
+}
+
+.browse:hover {
+  transform: scale(1.05);
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.text {
+  display: flex;
+  gap: 7px;
+  color: rgb(169, 169, 169);
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-right: 20px;
+  margin-right: 25px;
+  border-right: 1px solid rgb(169, 169, 169);
+}
+
+.text p {
+  font-weight: bold;
+}
+
+.text p:hover {
+  transform: scale(1.05);
+  color: white;
+  cursor: pointer;
+}
+
+.install {
+  display: flex;
+  gap: 7px;
+  color: rgb(169, 169, 169);
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding-right: 20px;
+  margin-right: 25px;
+}
+
+.install div:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.Sign {
+  margin-left: 20px;
+}
+
+.Login {
+  padding: 13px;
+  border-radius: 25px;
+  margin-right: 14px;
+  margin-left: -35px;
+  transition: 0.2s;
+  text-align: center;
+  margin-top: 0.4rem;
+  font-weight: 600;
+  width: 103px;
+}
+
+.Login:hover {
+  transform: scale(1.05);
+}
+
+.fix {
+  display: flex;
+  gap: 5px;
+}
+
+/* Sidebar (Right) */
+.main_right {
+  color: white;
+  background-color: #121212;
+  margin: 0.5rem;
+  margin-top: 0.1rem;
+  border-radius: 10px;
+  flex: 0 0 30vw; /* try 30–35vw */
+}
+
+.first {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.H {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+}
+
+.main_right:hover {
+  cursor: default;
+}
+
+.plus {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  color: #a6a0a0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.plus:hover {
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* Cards */
+.second,
+.third {
+  background-color: #1f1f1f;
+  padding: 13px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.second {
+  margin-top: 32px;
+}
+
+.third {
+  margin-top: 20px;
+}
+
+.second h2,
+.third h2 {
+  font-size: 0.8rem;
+}
+
+.second div,
+.third div {
+  font-size: 0.7rem;
+  margin-top: 8px;
+}
+
+.second button,
+.third button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  transition: 0.2s;
+}
+
+.second button:hover,
+.third button:hover {
+  transform: scale(1.05);
+  background-color: #f8f3f3;
+}
+
+/* Footer Links */
+.fourth,
+.fifth {
+  font-size: 0.5rem;
+  display: flex;
+  gap: 9px;
+  color: #bcb6b6;
+}
+
+.fourth {
+  padding: 13px;
+  margin-top: 60px;
+}
+
+.fifth {
+  padding-left: 13px;
+}
+
+.fourth:hover,
+.fifth:hover {
+  cursor: pointer;
+}
+
+.sixth {
+  font-size: 0.5rem;
+  font-weight: 400;
+  padding-left: 13px;
+  margin-top: 10px;
+}
+
+.main_right > button {
+  margin-top: 25px;
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(110, 108, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 16px;
+  gap: 8px;
+}
+
+.main_right > button:hover {
+  transform: scale(1.05);
+  border: 1px solid white;
+}
+
+.content{
+    display: flex;
+    gap: 1rem;
+    background-color: black;
+   
+    
+}
+
+.main_left {
+
+  color: white;
+  background-color: #151715;
+  border-radius: 5px;
+  flex:1;
+  margin-left:-16px;
+  padding: 2rem;
+  padding-top: 1.2rem;
+  position: relative;
+  margin-right: -22px;
+ overflow-y: auto;
+  height: calc(100vh - 8vh);
+  
+}
+
+/* Music Section */
+.music_section h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.8rem;
+}
+.music_section h2:hover{
+    text-decoration: underline;
+    text-decoration-color:white ;
+
+}
+.musics {
+  padding: 0.7rem;
+  position: relative;
+}
+.music_section{
+    margin-left: 0;
+}
+
+.musics:hover {
+  background-color: #1f1f1f;
+  cursor: pointer;
+}
+
+.musics img {
+  height: 9rem;
+  width: 9rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.musics .title {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+}
+.musics .title:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.desc {
+  font-size: 0.6rem;
+  color: #c9c8c8;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.desc span:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.img_icon {
+  color: rgb(113, 215, 113);
+  font-size: 2.5rem;
+  position: absolute;
+  width: 2rem;
+  display: flex;
+  border-radius: 50%;
+  background-color: #121212;
+  transform: translate(100px, -57px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.musics:hover .img_icon {
+  opacity: 1;
+  transform: translate(100px, -62px);
+  transition: 0.2s;
+}
+
+.musics:hover .img_icon:hover {
+  /* include translate so scaling doesn't remove positioning */
+  transform: translate(100px, -62px) scale(1.05);
+}
+
+/* Horizontal Scroll */
+.flex {
+  display: flex;
+  overflow-x: auto;
+
+
+ -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth
+  
+}
+.flex::-webkit-scrollbar {
+  display: none;                 
+}
+.hey{
+margin-right: 10px;
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+}
+.up div{
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+    font-weight: bold;
+    color: #c1bfbf;
+}
+.up div:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    cursor: pointer;
+}
+.adv img{
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+.desc1{
+  font-size: 0.6rem;
+  color: #c9c8c8;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.footer_main_row ul{
+list-style-type: none;
+}
+.footer_main_row{
+    display: flex;
+    gap: 2rem;
+
+}
+.footer_main_row ul li{
+ font-size: 0.7rem;
+ padding: 6px;
+ color: #b1b0b0;
+ margin-top: 5px;
+}
+.footer_main_row ul li:hover{
+    text-decoration: underline;
+    color: white;
+}
+.footer_main_row h4{
+font-size: 0.7rem;
+}
+.footer_main_row h4:hover{
+    cursor:text;
+}
+hr {
+    border: none;           /* remove default border */
+    height: 0.5px;            /* thickness */
+    background-color: rgb(58, 57, 57); /* your color */
+    margin: 1rem 0;         /* spacing */
+}
+.last{
+    font-size: 0.7rem;
+}
+.last.last:hover{
+    cursor: text;
+}
+.last1{
+    display: flex;
+    justify-content: space-between;
+}
+.group{
+    display: flex;
+    gap: 15px;
+}
+.group div{
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+.group div:hover{
+    background-color: #a3a3a3
+}
+.spotify-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #6a5af9, #9b6af9); /* purple gradient */
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin: 0 0;
+  height: 20px;
+  position: fixed;
+  bottom: 0;     
+  left: 0;        
+  width: 97vw;   
+}
+
+.spotify-text .preview {
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+.spotify-banner:hover{
+    cursor: pointer;
+}
+.spotify-text p {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.spotify-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.spotify-btn:hover {
+  transform: scale(1.05);
+  background-color: #f1f1f1;
+}
+.main_left::-webkit-scrollbar{
+    display: none;
+}
+.vertical-line {       
+    width: 1px;
+    background-color:black;
+    margin: 4px 0 4px;
+    margin-left: -22px;
+    margin-right: 4px;
+   
+}
+.vertical-line:hover{
+  background-color: #b3afaf;
+  cursor:grab;
+}
